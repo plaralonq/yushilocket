@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5eaf3">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<title>YUSHI & RIKU — Virtual Phone</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <div class="phone" id="phone">
+    <div class="island"></div>
+    <div class="statusbar"><span id="statusTime">9:41</span><span>●●● ᯤ ▰</span></div>
+
+    <section class="screen lock-screen active" id="lockScreen">
+      <div class="wallpaper-art"></div>
+      <div class="lock-top"><span>✦ YUSHI & RIKU ✦</span><span>♡</span></div>
+      <div class="lock-clock"><div id="lockTime">09:41</div><p id="lockDate">วันอังคารที่ 20 ตุลาคม</p></div>
+      <div class="lock-bottom">
+        <div class="lock-notice">♡  a little wish for today</div>
+        <button class="swipe-btn" id="unlockBtn">แตะเพื่อปลดล็อก　↑</button>
+        <div class="lock-shortcuts"><span>◉</span><span>⌁</span></div>
+      </div>
+    </section>
+
+    <section class="screen pass-screen" id="passScreen">
+      <button class="back-text" id="passBack">ยกเลิก</button>
+      <div class="pass-content">
+        <div class="pass-avatar">🐰</div>
+        <h2>Enter Passcode</h2><p>ใส่รหัสผ่าน 4 หลัก</p>
+        <div class="dots" id="dots"><i></i><i></i><i></i><i></i></div>
+        <p class="pass-error" id="passError" aria-live="polite"></p>
+        <div class="keypad" id="keypad">
+          <button data-num="1">1</button><button data-num="2">2<small>ABC</small></button><button data-num="3">3<small>DEF</small></button>
+          <button data-num="4">4<small>GHI</small></button><button data-num="5">5<small>JKL</small></button><button data-num="6">6<small>MNO</small></button>
+          <button data-num="7">7<small>PQRS</small></button><button data-num="8">8<small>TUV</small></button><button data-num="9">9<small>WXYZ</small></button>
+          <span></span><button data-num="0">0</button><button id="deleteNum" class="delete-key">⌫</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen home-screen" id="homeScreen">
+      <div class="home-heading"><div><small>OUR LITTLE UNIVERSE</small><h2>Yushi & Riku <span>♡</span></h2></div><button class="mini-profile" data-app="photos">🐰</button></div>
+      <div class="date-widget"><div><span class="widget-label">TUESDAY · OCTOBER 20</span><h3 id="homeGreeting">A little day, a little wish.</h3><p>오늘도 리쿠짱 생각 중… ♡</p></div><div class="widget-flower">✿</div></div>
+      <div class="app-grid" id="appGrid">
+        <button class="app-icon" data-app="kakao"><span class="app-art kakao">●</span><label>KakaoTalk</label></button>
+        <button class="app-icon" data-app="photos"><span class="app-art photos">🌄</span><label>Photos</label></button>
+        <button class="app-icon" data-app="notes"><span class="app-art notes">📝</span><label>Notes</label></button>
+        <button class="app-icon" data-app="instagram"><span class="app-art instagram">◎</span><label>Instagram</label></button>
+        <button class="app-icon" data-app="calendar"><span class="app-art calendar"><b>OCT</b><strong>20</strong></span><label>Calendar</label></button>
+        <button class="app-icon" data-app="music"><span class="app-art music">♫</span><label>Music</label></button>
+        <button class="app-icon" data-app="safari"><span class="app-art safari">🧭</span><label>Safari</label></button>
+        <button class="app-icon" data-app="settings"><span class="app-art settings">⚙</span><label>Settings</label></button>
+      </div>
+      <div class="home-bottom-widget"><span>♡</span><div><b>오늘의 마음</b><small>Thinking of you, always.</small></div><span class="sparkle">✦</span></div>
+      <div class="dock">
+        <button data-app="kakao"><span class="app-art kakao">●</span></button>
+        <button data-app="photos"><span class="app-art photos">🌄</span></button>
+        <button data-app="music"><span class="app-art music">♫</span></button>
+        <button data-app="notes"><span class="app-art notes">📝</span></button>
+      </div>
+    </section>
+
+    <section class="screen app-screen" id="appScreen">
+      <div class="app-header"><button id="homeBtn" aria-label="กลับหน้าหลัก">‹</button><strong id="appTitle">App</strong><button id="appMore" aria-label="เพิ่มเติม">•••</button></div>
+      <div class="app-content" id="appContent"></div>
+    </section>
+    <div class="home-indicator" id="homeIndicator" title="กลับหน้าหลัก"></div>
+  </div>
+  <aside class="outside-caption"><span class="caption-heart">♡</span><h1>YUSHI & RIKU</h1><p>your little virtual phone</p><div class="caption-tags"><span>iOS-inspired</span><span>made with love</span></div><p class="caption-hint">รหัสผ่าน <b>4503</b> · แตะไอคอนเพื่อเปิดแอป</p></aside>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
